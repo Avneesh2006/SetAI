@@ -434,19 +434,23 @@ nav {
 
     gap: 30px;
 
+    margin-top: 50px;
+
 }
 
 .feature-card {
 
     background: white;
+    border: 1px solid #f1f1f1;
+    min-height: 360px;
 
-    padding: 30px;
+    padding: 30px 28px;
 
     border-radius: 24px;
 
     box-shadow: 0 15px 40px rgba(0, 0, 0, .05);
 
-    transition: .35s;
+    transition: .35s ease;
 
 }
 
@@ -460,9 +464,75 @@ nav {
 
 .feature-icon {
 
-    font-size: 36px;
+    /* font-size: 36px;
 
-    margin-bottom: 18px;
+    margin-bottom: 18px; */
+    width: 56px;
+
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    font-size: 26px;
+
+    margin-bottom: 28px;
+}
+
+/* .feature-icon {
+
+    width: 56px;
+
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    font-size: 26px;
+
+    margin-bottom: 28px;
+
+} */
+
+.feature-card:nth-child(1) .feature-icon {
+
+    background: #F1EEFF;
+
+    color: #6C63FF;
+
+}
+
+.feature-card:nth-child(2) .feature-icon {
+
+    background: #EAF2FF;
+
+    color: #4F7CFF;
+
+}
+
+.feature-card:nth-child(3) .feature-icon {
+
+    background: #FFEAF6;
+
+    color: #D946EF;
+
+}
+
+.feature-card:nth-child(4) .feature-icon {
+
+    background: #E9FFF1;
+
+    color: #22C55E;
 
 }
 
