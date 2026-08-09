@@ -569,6 +569,8 @@ nav {
 }
 
 .price-card {
+    display: flex;
+    flex-direction: column;
 
     width: 340px;
 
@@ -601,5 +603,136 @@ nav {
     border: 2px solid var(--primary);
 
     transform: scale(1.04);
+
+}
+
+.pricing-btn {
+
+    width: 100%;
+
+    height: 48px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+    margin-top: auto;
+
+}
+
+
+.pricing-btn-outline {
+
+    background: white;
+
+    color: var(--text);
+
+    border: 1px solid #D6D9E0;
+
+}
+
+.pricing-btn-outline:hover {
+
+    background: #F8F8FA;
+
+    border-color: #BFC3CC;
+
+}
+
+
+.pricing-btn-primary {
+
+    background: var(--primary);
+
+    color: white;
+
+    border: 1px solid var(--primary);
+
+}
+
+.pricing-btn-primary:hover {
+
+    background: #4E4FD8;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 25px rgba(91, 92, 235, .25);
+
+}
+
+/* ==========================
+        FAQ
+========================== */
+
+.faq {
+
+    padding: 120px 0;
+
+}
+
+.faq .container {
+
+    max-width: 1440px;
+
+    margin: auto;
+
+}
+
+.faq-list {
+
+    margin-top: 50px;
+
+}
+
+.faq-item {
+
+    border-bottom: 1px solid #E5E7EB;
+
+}
+
+.faq-question {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 26px 10px;
+
+    cursor: pointer;
+
+}
+
+.faq-question h3 {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: var(--text);
+
+}
+
+.faq-question span {
+
+    font-size: 28px;
+
+    font-weight: 400;
+
+    color: var(--primary);
+
+    transition: .3s;
+
+}
+
+.faq-question:hover span {
+
+    transform: rotate(45deg);
 
 }
