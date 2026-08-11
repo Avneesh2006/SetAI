@@ -308,24 +308,68 @@
                         <h2>Frequently asked questions</h2>
                         <div class="faq-list">
                             <div class="faq-item">
-                                <span>What is SiteAI?</span>
-                                <span>⌄</span>
+
+                                <div class="faq-question">
+                                    <span>What is SiteAI?</span>
+                                    <span class="faq-arrow">⌄</span>
+                                </div>
+
+                                <div class="faq-answer">
+                                    SiteAI helps you create beautiful websites using AI without
+                                    needing to write code.
+                                </div>
+
                             </div>
                             <div class="faq-item">
-                                <span>Do I need coding skills to use SiteAI?</span>
-                                <span>⌄</span>
+
+                                <div class="faq-question">
+                                    <span>Do I need coding skills to use SiteAI?</span>
+                                    <span class="faq-arrow">⌄</span>
+                                </div>
+
+                                <div class="faq-answer">
+                                    No. You can create and customize your website without coding.
+                                </div>
+
                             </div>
+
                             <div class="faq-item">
-                                <span>can I use SiteAI for free?</span>
-                                <span>⌄</span>
+
+                                <div class="faq-question">
+                                    <span>Can I use my own domain?</span>
+                                    <span class="faq-arrow">⌄</span>
+                                </div>
+
+                                <div class="faq-answer">
+                                    Yes, you can connect your own custom domain to your website.
+                                </div>
+
                             </div>
+
                             <div class="faq-item">
-                                <span>can i cancell plan?</span>
-                                <span>⌄</span>
+
+                                <div class="faq-question">
+                                    <span>Is there a free plan?</span>
+                                    <span class="faq-arrow">⌄</span>
+                                </div>
+
+                                <div class="faq-answer">
+                                    Yes, SiteAI offers a free plan so you can get started.
+                                </div>
+
                             </div>
+
                             <div class="faq-item">
-                                <span>can i use my own domain?</span>
-                                <span>⌄</span>
+
+                                <div class="faq-question">
+                                    <span>Can I cancel anytime?</span>
+                                    <span class="faq-arrow">⌄</span>
+                                </div>
+
+                                <div class="faq-answer">
+                                    Yes, you can cancel your plan whenever you want.
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -353,8 +397,95 @@
 
     </main>
     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- BRAND -->
 
+                <div class="footer-brand">
+                    <h3>✦ SiteAI</h3>
+                    <p>
+                        Build beautiful websites with AI.<br>
+                        No code. No limits.
+                    </p>
+                    <div class="socials">
+                        <span>♥</span>
+                        <span>in</span>
+                        <span>◉</span>
+                        <span>▶</span>
+                    </div>
+                </div>
+
+                <!-- PRODUCT -->
+                <!-- PRODUCT -->
+                <div class="footer-column">
+
+                    <h4>Product</h4>
+
+                    <a href="#">Features</a>
+                    <a href="#">Templates</a>
+                    <a href="#">AI Builder</a>
+                    <a href="#">Pricing</a>
+
+                </div>
+
+
+                <!-- COMPANY -->
+                <div class="footer-column">
+
+                    <h4>Company</h4>
+
+                    <a href="#">About Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+
+                </div>
+
+
+                <!-- RESOURCES -->
+                <div class="footer-column">
+
+                    <h4>Resources</h4>
+
+                    <a href="#">Docs</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Community</a>
+                    <a href="#">Changelog</a>
+
+                </div>
+
+
+                <!-- LEGAL -->
+                <div class="footer-column">
+
+                    <h4>Legal</h4>
+
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+
+                </div>
+            </div>
+            <div class="copyright">
+                © 2024 SiteAI. All rights reserved.
+            </div>
+
+        </div>
     </footer>
+    <script>
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach(function (item) {
+
+            const question = item.querySelector(".faq-question");
+
+            question.addEventListener("click", function () {
+
+                item.classList.toggle("active");
+
+            });
+
+        }); </script>
 </body>
 
 </html>
